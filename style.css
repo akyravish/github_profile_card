@@ -1,16 +1,108 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 * {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  overflow: hidden;
-  margin: 0;
+	background-color: #e0e0e0;
+	font-family: 'Poppins', sans-serif;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	margin: 0;
+	color: #31344b;
+}
+
+.user-form {
+	width: 100%;
+	max-width: 700px;
+}
+
+.search {
+	width: 100%;
+	padding: 0.9rem 1rem;
+	border: none;
+	border-radius: 10px;
+	font-family: inherit;
+	font-size: 1rem;
+	background: #e0e0e0;
+	box-shadow: 5px 5px 10px #c5c5c5, -5px -5px 10px #fbfbfb;
+}
+
+.search:focus {
+	outline: none;
+	background: #e0e0e0;
+	box-shadow: inset 5px 5px 10px #c5c5c5, inset -5px -5px 10px #fbfbfb;
+}
+
+main {
+	margin: 2rem 1rem;
+	width: 100%;
+	max-width: 700px;
+}
+
+/* card */
+
+.card {
+	width: 100%;
+	max-width: 700px;
+	display: flex;
+	justify-content: space-around;
+	background: #e0e0e0;
+	box-shadow: 5px 5px 10px #c5c5c5, -5px -5px 10px #fbfbfb;
+	border-radius: 10px;
+	padding: 2rem;
+}
+
+.avatar {
+	border-radius: 50%;
+	height: 100px;
+	width: 100px;
+	background: #e0e0e0;
+	box-shadow: 5px 5px 10px #c5c5c5, -5px -5px 10px #fbfbfb;
+	margin-top: 2rem;
+	border: 10px solid #e0e0e0;
+}
+
+.user-info {
+	margin-left: 2rem;
+	max-width: 400px;
+	padding: 0;
+}
+
+.user-info ul {
+	display: flex;
+	justify-content: space-between;
+	list-style-type: none;
+	padding: 0;
+}
+
+.user-info strong {
+	font-size: 0.8rem;
+}
+
+.repo {
+	text-decoration: none;
+	color: #31344b;
+	background: #e0e0e0;
+	box-shadow: 5px 5px 10px #c5c5c5, -5px -5px 10px #fbfbfb;
+	padding: 5px 10px;
+	border-radius: 10px;
+	display: inline-block;
+	margin: 0 10px 20px 0;
+}
+
+@media screen and (max-width: 700px) {
+	.user-form,
+	main {
+		padding: 0 20px;
+	}
+
+	.card {
+		flex-direction: column;
+		align-items: center;
+	}
 }
